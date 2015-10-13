@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int variable;
+int *apuntador;
+
+int main()
+{
+	variable = 1;
+	apuntador = &variable;
+	*apuntador = 5;
+	printf("\nLa variable es: %d\n",*apuntador);
+}
