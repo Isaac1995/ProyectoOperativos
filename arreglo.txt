@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int *apuntador;
+int arreglo1[5] = {1,2,3,4,5};
+int arreglo2[5];
+
+int CopiaArreglo(int *apu)
+{
+
+int i = 0;
+for(i = 0; i < 5; i++){
+arreglo2[i] = *(apu+i);
+}
+}
+
+
+int main()
+{
+
+int i = 0;
+
+CopiaArreglo(arreglo1);
+
+for(i = 0; i < 5; i++){
+	printf("%d\n",arreglo2[i]);
+}
+}
